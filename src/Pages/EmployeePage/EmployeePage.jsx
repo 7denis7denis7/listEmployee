@@ -10,7 +10,7 @@ import "animate.css";
 import cn from "classnames";
 import getRequest from "../../helpers/getRequest";
 import { useNavigate } from "react-router-dom";
-import { ButtonBack } from "../../Components/Button/Button";
+import { Button } from "../../Components/Button/Button";
 import { LoaderSingle } from "../../Components/Loader/Loader";
 
 const EmployeePage = ({ employee, setIsOpenModal, setTextStatusRequest }) => {
@@ -75,7 +75,7 @@ const EmployeePage = ({ employee, setIsOpenModal, setTextStatusRequest }) => {
           </div>
         )}
         <div className={styles.employee__footer}>
-          <ButtonBack
+          <Button
             width="130px"
             text="Go back"
             action={() => navigate(-1)}

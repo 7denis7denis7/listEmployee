@@ -4,9 +4,12 @@ import SectionTitle from "../../Components/SectionTitle/SectionTitle";
 import { totalSum } from "../../helpers/totalSum";
 import { useSpring, animated } from "react-spring";
 import Slider from "../../Components/Slider/Slider";
+import {Button} from "../../Components/Button/Button";
+import {useNavigate} from "react-router-dom";
 
 const EmployeeSum = ({ employers }) => {
   const [total, setTotal] = useState(0);
+  const navigate = useNavigate();
 
   function AnimatedNumber({ number }) {
     const props = useSpring({ number, from: { number: 0 } });
@@ -40,6 +43,13 @@ const EmployeeSum = ({ employers }) => {
           </div>
         )}
         <Slider />
+        <div className={styles.sum__footer}>
+          <Button
+              width="130px"
+              text="Go back"
+              action={() => navigate(-1)}
+          />
+        </div>
       </div>
     </section>
   );

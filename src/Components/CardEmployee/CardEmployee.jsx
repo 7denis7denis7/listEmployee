@@ -9,12 +9,6 @@ const trans = (x, y, s) =>
   `perspective(500px) rotateX(${x}deg) rotateY(${y}deg) scale(${1})`;
 
 const calc = (x, y) => {
-  const BUFFER = 50;
-
-  const why = -(y - window.innerHeight / 2) / BUFFER;
-
-  console.log("why", why);
-  console.log("y", y);
   return [-(y / 50), x / 50, 1.1];
 };
 const CardEmployee = ({ id, name, salary, age, image, action }) => {
