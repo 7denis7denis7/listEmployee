@@ -1,0 +1,13 @@
+.filter {
+  width: 50%;
+  &__label {
+    color: #2196f3;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .filter__select {
+    border-radius: 5px;
+    border: 1px solid #015ea8;
+  }
+}

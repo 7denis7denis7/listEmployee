@@ -1,0 +1,28 @@
+.title {
+  margin: 0;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  background: -webkit-linear-gradient(left, #2196f3, #0899b9);
+  background: -o-linear-gradient(right, #2196f3, #0899b9);
+  background: -moz-linear-gradient(right, #2196f3, #0899b9);
+  background: linear-gradient(to right, #2196f3, #0899b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    font-size: 36px;
+    line-height: 120%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 28px;
+  }
+}

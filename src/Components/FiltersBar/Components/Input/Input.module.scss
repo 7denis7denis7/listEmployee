@@ -1,0 +1,31 @@
+.input {
+  width: 45%;
+  height: 38px;
+  outline: none;
+  color: hsl(0, 0%, 20%);
+  font-size: 16px;
+  padding: 0px 8px;
+  border-radius: 6px;
+  border: 1px solid #015ea8;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+  &::-webkit-input-placeholder {
+    color: hsl(0, 0%, 50%);
+  }
+  &::-moz-placeholder {
+    color: hsl(0, 0%, 50%);
+  }
+  &:-ms-input-placeholder {
+    color: hsl(0, 0%, 50%);
+  }
+  &:-moz-placeholder {
+    color: hsl(0, 0%, 50%);
+  }
+}

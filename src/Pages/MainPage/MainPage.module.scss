@@ -1,0 +1,104 @@
+.main {
+  &__wrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  &__subpage {
+    margin-top: 20px;
+    a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      color: #4caf50;
+      position: relative;
+      svg {
+        transition: 0.3s ease-in-out;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        width: 0%;
+        height: 2px;
+        background-color: #4caf50;
+        transition: width 0.3s ease-in-out;
+      }
+      &:hover {
+        &:after {
+          width: 100%;
+        }
+        svg {
+          transform: rotate(-30deg);
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+  &__empty {
+    min-width: 600px;
+    font-size: 21px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    &__loader {
+      width: 225px;
+      height: 260px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    &__wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__loader {
+      width: 260px;
+      height: 260px;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__empty {
+      min-width: 526px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__loader {
+      width: 100%;
+      height: auto;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &__empty {
+      min-width: 100%;
+    }
+  }
+}

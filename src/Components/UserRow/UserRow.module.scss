@@ -1,0 +1,15 @@
+.row {
+  display: flex;
+  align-items: center;
+  &__label {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: 500;
+    width: 80px;
+  }
+  &__value {
+    color: #7a8499;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
